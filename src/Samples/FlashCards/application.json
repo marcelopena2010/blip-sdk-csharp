@@ -1,0 +1,16 @@
+﻿{
+  "identifier": "chatapi",
+  "accessKey": "OEZHeUtDazZ1MFBKc0lZbmhIN3k==",
+  "messageReceivers": [
+    {
+      "type": "PlainTextMessageReceiver",
+      "mediaType": "text/plain"
+    }
+  ],
+  "settings": {
+    "key1": "value1",
+    "key2": 2
+  },
+  "settingsType": "Settings",
+  "startupType": "Startup"
+}

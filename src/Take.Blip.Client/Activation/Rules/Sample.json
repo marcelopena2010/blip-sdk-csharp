@@ -1,0 +1,32 @@
+﻿{
+  "rules": [
+    {      
+      "priority": 0,      
+      "when": {
+        "state": "default",
+        "message": {
+          "type": "text/plain",
+          "content": "Olá"
+        },
+        "notification": {
+          "event": "received"
+        }
+      },
+      "do": {
+        "sendMessage": {
+          "id": "${newId}",
+          "type": "text/plain",
+          "content": "Olá, como posso ajudar?"
+        },
+        "invokeReceiver": {
+          "type": "PlainTextMessageReceiver",
+          "settings": {
+            "key1": "value1"
+          },
+          "settingsType": "Settings"
+        },
+        "setState": "greeting-sent"
+      }
+    }
+  ]
+}
